@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id" class="h-full bg-slate-900 text-slate-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus Deforestation Drivers & AI - WUR Netherlands</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="h-full font-sans antialiased bg-slate-900 text-slate-100">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-slate-800/90 backdrop-blur border-b border-slate-700 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="p-2 bg-teal-600 rounded-lg text-white">
+                        <i class="fa-solid fa-tree text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-lg leading-tight text-white">Informatics Practitioner Lecture Series</h1>
+                        <p class="text-xs text-teal-400">Attributing Direct Drivers to Deforestation Alerts with Satellite Imagery & AI</p>
+                    </div>
+                </div>
+                <div class="text-xs bg-teal-950/80 text-teal-300 border border-teal-700/50 px-3 py-1.5 rounded-lg font-medium">
+                    Wageningen University & Research, Netherlands
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- Hero Banner Sesi 6 -->
+        <div class="bg-gradient-to-r from-teal-900/60 via-slate-800 to-emerald-950/80 border border-teal-500/30 rounded-2xl p-6 md:p-8 mb-8 shadow-xl">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div>
+                    <span class="bg-teal-500/20 text-teal-300 text-xs font-bold px-3 py-1 rounded-full border border-teal-500/40 uppercase tracking-wider">Studi Kasus 6: Remote Sensing & AI for Forestry</span>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-white mt-2">Deforestation Alerts & Driver Attribution</h2>
+                    <p class="text-slate-300 text-sm mt-1">Pemateri: <span class="font-semibold text-teal-300">Dr. Bart Slaughter</span> (Postdoctoral Researcher in Remote Sensing, Wageningen University, Belanda)</p>
+                </div>
+                <div class="flex items-center space-x-2 bg-slate-900/80 px-4 py-2 rounded-xl border border-slate-700 text-xs text-slate-300">
+                    <i class="fa-solid fa-satellite text-teal-400 text-lg"></i>
+                    <span>Sentinel-1 (Radar) & Sentinel-2 (Optical)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Metric Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-slate-800 border border-slate-700 rounded-xl p-5 shadow-lg">
+                <p class="text-xs font-medium text-slate-400">Frekuensi Deteksi Alerts</p>
+                <div class="flex items-baseline space-x-2 mt-1">
+                    <span class="text-xl font-bold text-teal-400">Mingguan / Bulanan</span>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">Skala piksel 10 hingga 30 meter</p>
+            </div>
+            <div class="bg-slate-800 border border-slate-700 rounded-xl p-5 shadow-lg">
+                <p class="text-xs font-medium text-slate-400">Model AI Utama</p>
+                <div class="flex items-baseline space-x-2 mt-1">
+                    <span class="text-xl font-bold text-white">Convolutional Neural Network</span>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">Klasifikasi multi-band image stack</p>
+            </div>
+            <div class="bg-slate-800 border border-slate-700 rounded-xl p-5 shadow-lg">
+                <p class="text-xs font-medium text-slate-400">Kelebihan Radar (S1)</p>
+                <div class="flex items-baseline space-x-2 mt-1">
+                    <span class="text-xl font-bold text-emerald-400">Tembus Awan (Cloud-Free)</span>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">Sangat handal untuk wilayah tropis berawan</p>
+            </div>
+            <div class="bg-slate-800 border border-slate-700 rounded-xl p-5 shadow-lg">
+                <p class="text-xs font-medium text-slate-400">Platform Publikasi Data</p>
+                <div class="flex items-baseline space-x-2 mt-1">
+                    <span class="text-xl font-bold text-amber-400">Global Nature Watch</span>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">Transparansi pemantauan hutan global WRI</p>
+            </div>
+        </div>
+
+        <!-- Direct Drivers Breakdown -->
+        <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-xl mb-8">
+            <h3 class="text-lg font-bold text-white mb-4 flex items-center space-x-2">
+                <i class="fa-solid fa-layer-group text-teal-400"></i>
+                <span>Atribusi 4 Driver Utama Penyebab Kehilangan Hutan</span>
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="p-4 bg-slate-900/80 rounded-xl border border-slate-700">
+                    <span class="text-xs font-bold text-teal-400 block mb-1">1. AGRICULTURE</span>
+                    <strong class="text-white text-sm block mb-2">Pertanian Skala Kecil & Besar</strong>
+                    <p class="text-xs text-slate-400">Pembukaan lahan untuk perkebunan atau pertanian, seringkali dibedakan berdasarkan ukuran luasan dan indikasi kemunculan api.</p>
+                </div>
+
+                <div class="p-4 bg-slate-900/80 rounded-xl border border-slate-700">
+                    <span class="text-xs font-bold text-amber-400 block mb-1">2. RESOURCE EXTRACTION</span>
+                    <strong class="text-white text-sm block mb-2">Pertambangan & Logging</strong>
+                    <p class="text-xs text-slate-400">Aktivitas penambangan emas ilegal (seperti di Kongo/Amazon) serta pembukaan jalan tebangan kayu selektif (*selective logging*).</p>
+                </div>
+
+                <div class="p-4 bg-slate-900/80 rounded-xl border border-slate-700">
+                    <span class="text-xs font-bold text-rose-400 block mb-1">3. WILDFIRES</span>
+                    <strong class="text-white text-sm block mb-2">Kebakaran Hutan Musiman</strong>
+                    <p class="text-xs text-slate-400">Kebakaran hebat yang dipicu musim kering ekstrem (seperti di Bolivia/Amazon dan Kalimantan), sering memicu degradasi hutan.</p>
+                </div>
+
+                <div class="p-4 bg-slate-900/80 rounded-xl border border-slate-700">
+                    <span class="text-xs font-bold text-blue-400 block mb-1">4. NATURAL DISTURBANCES</span>
+                    <strong class="text-white text-sm block mb-2">Banjir & Badai Alami</strong>
+                    <p class="text-xs text-slate-400">Kerusakan tutupan pohon akibat luapan sungai (banjir) atau angin badai besar (*windthrows*), menjadi tantangan akurasi model.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Simulator: Model Accuracy & Micro F1-Score Evaluation -->
+        <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-xl" x-data="{
+            sampleSize: 1000,
+            agriRatio: 70,
+            miningRatio: 10,
+            fireRatio: 15,
+            naturalRatio: 5,
+            get totalRatio() { return Number(this.agriRatio) + Number(this.miningRatio) + Number(this.fireRatio) + Number(this.naturalRatio); },
+            get overallAccuracy() {
+                // Dominasi kelas agriculture yang tinggi meningkatkan overall accuracy
+                let base = 85;
+                let penalty = Math.abs(this.totalRatio - 100) * 0.5;
+                return Math.max(60, Math.min(96, base + (this.agriRatio * 0.05) - penalty)).toFixed(1);
+            },
+            get microF1() {
+                // Micro F1 menimbang adil semua kelas (termasuk kelas minoritas seperti mining dan natural)
+                let balance = 100 - Math.abs(this.miningRatio - 25) - Math.abs(this.naturalRatio - 25);
+                return Math.max(50, Math.min(88, 72 + (balance * 0.1))).toFixed(1);
+            }
+        }">
+            <h3 class="text-lg font-bold text-white mb-2 flex items-center space-x-2">
+                <i class="fa-solid fa-calculator text-teal-400"></i>
+                <span>Simulator Evaluasi Performa Model AI (Overall Accuracy vs Micro F1-Score)</span>
+            </h3>
+            <p class="text-xs text-slate-400 mb-6">Uji bagaimana distribusi proporsi kelas driver deforestasi memengaruhi Overall Accuracy (didominasi kelas mayoritas) dan Micro F1-Score (bobot seimbang antar kelas).</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Sliders -->
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between text-xs mb-1">
+                            <label class="text-slate-300 font-medium">Proporsi Kelas Agriculture</label>
+                            <span class="text-teal-400 font-bold" x-text="agriRatio + '%'"></span>
+                        </div>
+                        <input type="range" min="10" max="90" step="5" x-model="agriRatio" class="w-full accent-teal-500 bg-slate-700 h-2 rounded-lg cursor-pointer">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs mb-1">
+                            <label class="text-slate-300 font-medium">Proporsi Kelas Mining / Logging</label>
+                            <span class="text-amber-400 font-bold" x-text="miningRatio + '%'"></span>
+                        </div>
+                        <input type="range" min="5" max="50" step="5" x-model="miningRatio" class="w-full accent-amber-500 bg-slate-700 h-2 rounded-lg cursor-pointer">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs mb-1">
+                            <label class="text-slate-300 font-medium">Proporsi Kelas Wildfires</label>
+                            <span class="text-rose-400 font-bold" x-text="fireRatio + '%'"></span>
+                        </div>
+                        <input type="range" min="5" max="50" step="5" x-model="fireRatio" class="w-full accent-rose-500 bg-slate-700 h-2 rounded-lg cursor-pointer">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs mb-1">
+                            <label class="text-slate-300 font-medium">Proporsi Kelas Natural (Banjir/Badai)</label>
+                            <span class="text-blue-400 font-bold" x-text="naturalRatio + '%'"></span>
+                        </div>
+                        <input type="range" min="2" max="30" step="1" x-model="naturalRatio" class="w-full accent-blue-500 bg-slate-700 h-2 rounded-lg cursor-pointer">
+                    </div>
+                </div>
+
+                <!-- Simulation Output -->
+                <div class="md:col-span-2 bg-slate-900/80 border border-slate-700/80 rounded-xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="grid grid-cols-2 gap-4 text-center mb-6">
+                            <div class="bg-slate-800/80 p-4 rounded-lg border border-slate-700">
+                                <span class="text-xs text-slate-400 block">Overall Accuracy</span>
+                                <span class="text-2xl font-black text-emerald-400 mt-1 block" x-text="overallAccuracy + '%'"></span>
+                                <span class="text-[10px] text-slate-500">Cenderung tinggi karena didominasi Agriculture</span>
+                            </div>
+                            <div class="bg-slate-800/80 p-4 rounded-lg border border-slate-700">
+                                <span class="text-xs text-slate-400 block">Micro F1-Score (Balanced)</span>
+                                <span class="text-2xl font-black text-teal-400 mt-1 block" x-text="microF1 + '%'"></span>
+                                <span class="text-[10px] text-slate-500">Evaluasi adil untuk kelas minoritas (Mining/Natural)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 p-3 bg-teal-950/40 border border-teal-800/40 rounded-lg text-xs text-slate-300">
+                        <i class="fa-solid fa-circle-info text-teal-400 mr-1"></i>
+                        <strong>Catatan Analisis Dr. Bart Slaughter:</strong> Meskipun Overall Accuracy tampak sangat tinggi, metrik Micro F1-Score memberikan gambaran jujur bahwa kelas alami seperti kebakaran hutan (*wildfires*) dan banjir memiliki tingkat kesalahan klasifikasi (*confusion*) yang lebih tinggi.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>Program Studi Informatika — Fakultas Teknik, Universitas Bengkulu</p>
+            <p class="mt-1 text-slate-600">Sesi 6: Practical Lecture Series - Dr. Bart Slaughter (Wageningen University & Research, Netherlands)</p>
+        </div>
+    </footer>
+
+</body>
+</html>
